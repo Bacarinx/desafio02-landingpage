@@ -1,1 +1,385 @@
 @charset "UTF-8";
+
+/*      Fontes    */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    /*  Colors  */
+
+    /*  Primary  */
+    --Very-Dark-Blue: hsl(243, 87%, 12%);
+    --Desaturated-Blue: hsl(238, 22%, 44%);
+
+    /*  Accent   */
+    --Bright-Blue: hsl(224, 93%, 58%);
+    --Moderate-Cyan: hsl(170, 45%, 43%);
+
+    /*   Neutral    */
+
+    --Light-Grayish-Blue: hsl(240, 75%, 98%);
+    --Light-Gray: hsl(0, 0%, 75%);
+
+    /*  Fontes   */
+
+    /* Headings Call-to-actions, Header Navigation */
+    --font-primary: 'Raleway', sans-serif;
+
+    /*  Body     */
+    --font-secundary: 'Open Sans', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-secundary);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.info-bg {
+    margin: 0 auto;
+    
+}
+.info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 100%;
+    padding: 25px 20px;
+    font-size: 1em;
+}
+
+.info ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    flex: 1;
+}
+
+.logo {
+    width: 100px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.img {
+    max-width: 100%;
+    margin: 20px 0;
+}
+
+.img img {
+    width: 100%;
+}
+
+.section {
+    padding: 20px;
+    max-width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.section h1{
+    color: var(--Very-Dark-Blue);
+    font-weight: bold;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.section p {
+    color: var(--Very-Dark-Blue);
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.form {
+    width: 100%;
+    max-width: 1400px;
+}
+
+form {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    outline-color: blue;
+}
+
+form button {
+    padding: 10px;
+    background-color: var(--Bright-Blue);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.359) ;
+}
+
+form button:hover {
+    background-color: hsl(239, 43%, 61%);
+}
+
+.img-bg img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.proposal {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.proposal a {
+    color: var(--Moderate-Cyan);
+    border-bottom: 2px solid var(--Moderate-Cyan);
+}
+
+.proposal a:hover {
+    color: hsl(170, 72%, 61%);
+    border-bottom: 2px solid hsl(170, 72%, 61%);
+}
+
+.container-coments {
+    max-width: 340px;
+    margin: 0 auto;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.251);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.container-coments p {
+    line-height: 1.8;
+    font-size: 0.8;
+    color: var(--Very-Dark-Blue);
+    margin-bottom: 10px;
+}
+
+.avatar{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.container-coments img {
+    border-radius: 50%;
+    width: 15%;
+    height: 15%;
+}
+
+.container-coments h1 {
+    color: var(--Very-Dark-Blue);
+    font-size: 1em;
+}
+
+.container-coments p {
+    color: var(--Very-Dark-Blue);
+    font-size: 1em;
+}
+
+.support {
+    background-color: var(--Desaturated-Blue);
+    color: white;
+    padding-bottom: 40px;
+}
+
+.purple h1{
+    color: white;
+    padding: 30px 0 15px 0;
+} 
+
+.purple p{
+    color: white;
+    padding-bottom: 20px;
+} 
+
+section.footer {
+    background-color: hsl(243, 87%, 20%);
+    display: flex;
+    flex-direction: column;
+    height: 530px;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.logo2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.contact img {
+    margin-right: 10px;
+}
+
+.contact p{
+    padding-bottom: 10px;
+}
+
+.list-footer ul li{
+    padding-bottom: 10px;
+}
+
+section.footer a {
+    color: white;
+}
+
+section.footer ul {
+    color: white;
+}
+
+section.footer ul li:hover {
+    color: rgb(80, 80, 246);
+    text-decoration: underline;
+}
+
+.logo-footer ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.logo-footer img{
+    background-color: white;
+    border-radius: 50%;
+    width: 30px;
+}
+
+@media screen and (min-width: 993px) {
+    .info {
+        font-size: 1.5em;
+        padding: 20px 40px;
+    }
+    
+    .info ul {
+        gap: 50px;
+        padding: 0 30px;
+    }
+
+    .logo {
+        width: 200px;
+    }
+    
+    .logo img {
+        width: 100%;
+    } 
+
+    .bg-form {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin: 0 50px 100px 50px;
+    }
+
+    .bg-form h1 {
+        text-align: justify;
+    }
+
+    .bg-form p {
+        text-align: justify;
+    }
+
+    .bg-information {
+        display: flex;
+        align-items: center;
+    }
+    .img-bg {
+        width: 50%;
+    }
+    
+    .bg-information {
+        margin: 0 50px 100px 50px;
+    }
+
+    .metade {
+        flex: 1;
+    }
+
+    .bg-information h1{
+        text-align: justify;
+        font-size: 1.7em;
+    }
+
+    .bg-information p{
+        text-align: justify;
+    }
+
+    .proposal {
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    .proposal a{
+        font-size: 1.2em;
+
+    }
+    .container-coments{
+        margin: 0;
+    }
+
+    .container-coments h1{
+        margin: 0;
+        font-size: 1em;
+    }
+
+    .support {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .support .information {
+        width: 50%;
+        padding: 20px;
+    }
+
+    .support .information h1 {
+        text-align: left;
+    }
+
+    .support .information p {
+        text-align: justify;
+    }
+
+    .support .form-purple {
+        padding-left: 70px;
+    }
+
+    .support .form-purple input {
+        width: 200%;
+    }
+
+    .support .form-purple button {
+        width: 100%;
+        padding: 7px;
+    }
+
+    section.footer {
+        display: flex;
+        flex-direction: row;
+        padding: 100px;
+        height: 100%;
+    }
+}
